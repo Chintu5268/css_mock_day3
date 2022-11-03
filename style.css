@@ -1,4 +1,4 @@
-button{
+button {
   width: 150px;
   height: 35px;
   background-color: blueviolet;
@@ -6,36 +6,86 @@ button{
   border: 2px solid black;
   border-radius: 5px;
 }
-button:hover{
+
+button:hover {
   background-color: aqua;
 }
-#para{
+
+#para {
   font-family: 'Kolker Brush', cursive;
 }
-.box1{
+
+.box1 {
   width: 100px;
   height: 100px;
   background-color: aqua;
   transition: width 5s;
 
 }
-.box1:hover{
+
+.box1:hover {
   width: 400px;
-  
+
 }
-.box2{
+
+.box2 {
   width: 100px;
   height: 100px;
   background-color: aqua;
   border-radius: 50%;
 
 }
-@media screen  and (max-width:500px){
-  .box2{
+
+@media screen and (max-width:300px) {
+  .box2 {
     width: 50px;
     height: 50px;
     background-color: blue;
     border-radius: 0%;
-  
+
+  }
+}
+
+#chintu {
+  width: 100px;
+  height: 100px;
+  background: rgb(0, 255, 55);
+  position: relative;
+  animation: sandesh 15s infinite;
+  animation-delay: 1s;
+}
+
+/* @keyframes sandesh {
+  from {left: 0px;}
+  to {left: 500px;
+  background-color: rgb(209, 14, 0);}
+} */
+@keyframes sandesh {
+  0% {
+    left: 0px;
+    background-color: rgb(209, 14, 0);
+  }
+
+  25% {
+    left: 300px;
+    background-color: rgb(0, 150, 209);
+  }
+
+  50% {
+    left: 300px;
+    top: 300px;
+    background-color: rgb(0, 209, 87);
+  }
+
+  75% {
+    left: 0px;
+    top: 300px;
+    background-color: rgb(153, 209, 0);
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+    background-color: rgb(209, 14, 0);
   }
 }
