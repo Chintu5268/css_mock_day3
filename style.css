@@ -27,21 +27,28 @@ button:hover {
   width: 400px;
 
 }
-
 .box2 {
   width: 100px;
   height: 100px;
-  background-color: aqua;
+  background-color: rgb(0, 255, 55);
   border-radius: 50%;
+  
+
+}
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  
 
 }
 
 @media screen and (max-width:300px) {
-  .box2 {
+  .box3 {
     width: 50px;
     height: 50px;
     background-color: blue;
-    border-radius: 0%;
+    border-radius: 50%;
 
   }
 }
@@ -51,23 +58,21 @@ button:hover {
   height: 100px;
   background: rgb(0, 255, 55);
   position: relative;
-  animation: sandesh 15s infinite;
-  animation-delay: 1s;
+  animation: sandesh 10s infinite;
+  animation-direction: alternate;
 }
 
-/* @keyframes sandesh {
-  from {left: 0px;}
-  to {left: 500px;
-  background-color: rgb(209, 14, 0);}
-} */
+
 @keyframes sandesh {
   0% {
     left: 0px;
+    top:0;
     background-color: rgb(209, 14, 0);
   }
 
   25% {
     left: 300px;
+    top: 0;
     background-color: rgb(0, 150, 209);
   }
 
